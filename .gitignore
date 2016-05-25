@@ -5,4 +5,4 @@ tmp
 .idea
 node_modules/
 dist/
-docs/
+docs/dist/

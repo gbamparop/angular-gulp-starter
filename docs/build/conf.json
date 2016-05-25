@@ -1,0 +1,34 @@
+{
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "source": {
+        "includePattern": ".+\\.js(doc)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "opts": {
+        "destination": "./docs/dist"
+    },
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false,
+        "path": "ink-docstrap",
+        "theme": "cerulean",
+        "systemName": "angular-gulp-starter",
+        "linenums": true,
+        "dateFormat": "MMMM Do YYYY, h:mm:ss a",
+        "footer": "<link type='text/css' rel='stylesheet' href='styles/custom.css'>",
+        "default": {
+            "outputSourceFiles": true,
+            "staticFiles": {
+                "include": [
+                    "./docs/build/static"
+                ]
+            }
+        }
+    }
+}
